@@ -3,6 +3,7 @@ const packageJson = require('./package.json');
 
 module.exports = defineConfig({
     outputDir: 'donate',
+    publicPath: '/donate/',
     transpileDependencies: true,
     chainWebpack: config => {
         config
@@ -13,5 +14,11 @@ module.exports = defineConfig({
                 }
                 return args;
             })
-    }
+
+        // config.module.rule('images').use('url-loader').tap((options) => {
+        //     const newOptions = options;
+        //     newOptions.publicPath = '/donate';
+        //     return newOptions;
+        // });
+    },
 })
