@@ -4,7 +4,6 @@ const packageJson = require('./package.json');
 module.exports = defineConfig({
     outputDir: 'donate',
     publicPath: '/donate/',
-    assetsDir: '/donate/',
     transpileDependencies: true,
     chainWebpack: config => {
         config
