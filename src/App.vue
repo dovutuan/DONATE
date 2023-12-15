@@ -6,11 +6,10 @@
         <span style="font-weight:400;">Support</span> Do Vu Tuan 🎉
       </h1>
 
-      <img
-          width="452"
-          height="227"
-          alt="Đỗ Vũ Tuấn"
-          class="donate-card-poster mt-1">
+      <img width="452"
+           height="227"
+           alt="Đỗ Vũ Tuấn"
+           class="donate-card-poster mt-1">
 
       <div class="donate-method-label">
         <span>DONATE WITH</span>
@@ -29,8 +28,8 @@
       </div>
 
       <div class="mt-1" style="text-align:right">
-        <a v-for="(social, index) in  socials" :key="index" :href="social.url" class="ref-link" target="_blank">
-          {{social.name}}
+        <a v-for="(social, index) in socials" :key="index" :href="social.url" class="ref-link" target="_blank">
+          {{ social.name }}
         </a>
       </div>
     </div>
@@ -49,21 +48,21 @@ import {ref} from "vue";
 const qrCodes = ref([
   {
     name: 'Momo',
-    icon: '/icon/momo.png',
+    icon: '/donate/icon/momo.png',
     classColor: 'momo',
-    qr: '/qrcode/momo-qr.png'
+    qr: '/donate/qrcode/momo-qr.png'
   },
   {
     name: 'Buy me a coffee',
-    icon: '/icon/buymeacoffee.png',
+    icon: '/donate/icon/buymeacoffee.png',
     classColor: 'buymeacoffee',
-    qr: '/qrcode/buymeacoffee-qr.png'
+    qr: '/donate/qrcode/buymeacoffee-qr.png'
   },
   {
     name: 'Banking',
-    icon: '/icon/techcombank.png',
+    icon: '/donate/icon/techcombank.png',
     classColor: 'banking',
-    qr: '/qrcode/bank-qr.png'
+    qr: '/donate/qrcode/bank-qr.png'
   },
 ]);
 
